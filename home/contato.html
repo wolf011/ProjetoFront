@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assinatura de Plano</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/componentes.css">
+    <link rel="stylesheet" href="../css/contato.css">
+
+</head>
+<body>
+    
+    <!-- <button class="btn btn-banner" onclick="window.location.href='./about.html'">Sobre nós</button> -->
+    
+    <!-- **************************** Texto inicial da pagina **************************************** -->
+    
+
+    <header class="layout-cabecalho">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4">Bem vindo cadastro Super Front-Gás</h1>
+                <p class="lead">Rápido e sem burocracias...Levaremos seu gás em poucos cliques</p>
+                <hr class="my-2">
+            </div>
+        </div>
+    </header>
+    
+    <!-- ******************************************************************************************** -->
+    
+    <div class="container">
+        <div class="layout-assinatura">
+            <h1 class="titulo-formulario">Preencha os campos abaixo com deus dados</h1>
+            <form method="post" class="form" >
+                
+                <div class="row">
+                    <div class="my-3 col-md-12">
+                        <label for="nome">Nome:</label>
+                        <input 
+                        type="text" 
+                        name="nome"
+                        id="nome"
+                        placeholder="Digite o nome:"
+                        class="form-control"
+                        required="true"
+                        maxlength="60"
+                        >
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="my-3 col-md-12">
+                        <label for="email">Email:</label>
+                        <input 
+                        type="email" 
+                        name="email"
+                        id="email"
+                        placeholder="Digite o email:"
+                        class="form-control"
+                        required="true"
+                        maxlength="50"
+                        >
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="my-3 col-md-3">
+                        <label for="telefone">Telefone:</label>
+                        <input 
+                        type="tel" 
+                        name="telefone"
+                        id="telefone"
+                        placeholder="Digite o seu Telefone:"
+                        class="form-control"
+                        >
+                    </div>
+
+                    <div class="my-3 col-md-3">
+                        <label for="dataNasc">Data de Nascimento:</label>
+                        <input 
+                        type="date" 
+                        name="dataNasc"
+                        id="dataNasc"
+                        class="form-control"
+                        >
+                    </div>
+                    
+                    <div class="my-3 col-md-3">
+                        <label for="tipoPlano">Escolha seu plano:</label>
+                        <select name="tipoPlano" id="tipoPlano">
+                            <option value="B">Básico</option>
+                            <option value="I">Intermediário</option>
+                            <option value="A">Avançado</option>
+                        </select>
+                    </div>
+
+                    <div class="my-3 col-md-3">
+                        <label>Serviço Adicional:</label>
+                        
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="service" id="netflix" value="netflix">
+                                <label class="form-check-label" for="service">Netflix</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="service" id="prime" value="prime">
+                                <label class="form-check-label" for="service">PrimeVideo</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="service" id="disney" value="disney">
+                                <label class="form-check-label" for="service">Disney</label>
+                            </div>
+                            
+                        </div>
+
+                    <div class="row">
+                        <div class="my-3 col-md-6">
+                            <label for="avaliacao">Avaliação de atendimento ao cliente</label>
+                            <input type="range" list="avaliacao">
+                            <datalist id="avaliacao">
+                                <option value="0" label="0%">0%</option>
+                                <option value="10" label="10%">10%</option>
+                                <option value="20" label="20%">20%</option>
+                                <option value="30" label="30%">30%</option>
+                                <option value="40" label="40%">40%</option>
+                                <option value="50" label="50%">50%</option>
+                            </datalist>
+                        </div>
+
+                    </div>
+                    
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+                <button type="reset" class="btn btn-secondary">Limpar</button>
+            </form>
+        </div>
+    </div>
+    
+    
+    <!-- ******************************************************************************************** -->
+    <!-- Rodapé -->
+    <footer class="layout-rodape">
+        <article class="rodape">
+            <a href="index.html" target="_blank" class="rodape__botao">Super Front-Gas</a> <!-- target com blank usado para abrir links em novas abas-->
+            <a href="mailto:turispetro@petropolis.rj.gov.br" class="rodape__botao">Email: contato@superflex</a>
+            <section class="rodape__duplo">
+                <p>DISQUE TURISMO:</p>
+                <a href="tel:08004507070" target="_blank" class="rodape__botao">0800 450 7070</a>
+                <p>|</p>
+                <a href="tel:+552422469462" target="_blank" class="rodape__botao">(24) 2246-9462</a>
+                <p>SIGA NAS REDES:</p>
+                <a href="https://wa.me//552422373321" target="_blank" class="rodape__botao">WhatsApp</a>
+                <a href="https://www.instagram.com" target="_blank" class="rodape__botao">Instagram</a>
+                <a href="https://pt-br.facebook.com" target="_blank" class="rodape__botao">Facebook</a>
+            </section>
+            <p>&copy; 2023 - TurisPetro - Todos os direitos reservados</p>
+        </article>
+    </footer>
+    
+    <!-- ******************************************************************************************** -->
+
+<script src="../js/form.js"></script>
+</body>
+</html>
