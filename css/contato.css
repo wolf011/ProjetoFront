@@ -1,0 +1,57 @@
+/*************************** Base ****************************************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../img/museu.jpg"); /*Definiu imagem de fundo*/
+    background-size: contain; /*Ajusta a imagem de fundo ao seu container*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 16px;
+}
+
+/**************************************************************************************/
+/**************************** Layout **************************************************/
+.layout-rodape {
+    margin-top: 10px;
+    padding: 20px;
+    width: 100vw;
+    height: 400%;
+    background-color: #005d92;
+    color: white;
+    font-size: 0.9rem;
+}
+
+
+/**************************************************************************************/
+/******************************* Components *******************************************/
+.rodape {
+    display: flex;
+    gap: 15px; /*Distância entre os itens*/
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.rodape__duplo {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.rodape__botao {
+    color: white;
+    text-decoration: none;
+    outline: none;
+}
+
+.rodape__botao:hover {
+    color: #ffcc33;
+    ;
+}
+
+
+/**************************************************************************************/
