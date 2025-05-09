@@ -1,27 +1,90 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="icon" type="image/png" href="../img/logo.png">
+
+    <link rel="stylesheet" href="../css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/components.css">
+
+    <title>Super Front-Gás</title>
 
 </head>
-<body>
-    
-        <!-- **************************** Texto inicial da pagina **************************************** -->
 
-    <header class="layout-cabecalho">
-        <div class="jumbotron jumbotron-fluid">
-            <div class="container">
-                <h1 class="display-4">Super Front-Gás</h1>
-                <p class="lead">Rápido e sem burocracias...Levaremos seu gás em poucos cliques</p>
-                <hr class="my-2">
+    <body class="body--background">
+
+        <!-- ############################################################### Cabeçalho ###################################################################### -->
+
+
+
+        <header class="layout-cabecalho--diferente">
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                    <h1 class="display-4">Super Front-Gás</h1>
+                </div>
             </div>
-        </div>
-    </header>
-    
-    <!-- ******************************************************************************************** -->
+        </header>
 
-</body>
+        <!-- ################################################################### Corpo ###################################################################### -->
+
+        <main class="layout-corpo--semFundo">
+
+            <section class="conteudo">
+                <div class="row">
+                    <section class="col-12 col-md-6">
+                        <article class="conteudo__bloco">
+                            <button onclick="navegarPara('sobre.html')" class="btn conteudo__botaoTitulo">Quem somos?</button>
+                        </article>
+            
+                        <article class="conteudo_bloco">
+                            <button onclick="navegarPara('produtos.html')" class="btn conteudo__botaoTitulo">Conheça nossos produtos</button>
+                        </article>
+            
+                        <article class="conteudo_bloco">
+                            <button onclick="navegarPara('pedidos.html')" class="btn conteudo__botaoTitulo">Compre conosco</button>
+                        </article>
+            
+                        <article class="conteudo_bloco">
+                            <button onclick="navegarPara('pedidos.html')" class="btn conteudo__botaoTitulo">Histórico de compras</button>
+                        </article>
+
+                    </section>
+                    <section class="col-12 col-md-6">
+                        <img src="../img/logo.png" alt="logo" class="conteudo__imagem img-fluid">
+                    </section>
+                </div>
+
+            </section>
+
+        </main>
+
+        <!-- ################################################################## Rodapé ###################################################################### -->
+
+        <footer class="layout-rodape--semFundo">
+            <section class="rodape">
+                <a href="index.html" target="_blank" class="rodape__botao">Super Front-Gas</a>
+                <!-- target com blank usado para abrir links em novas abas-->
+                <a href="mailto:turispetro@petropolis.rj.gov.br" class="rodape__botao">Email: contato@superflex</a>
+                <address class="rodape__duplo">
+                    <p>DISQUE Front-Gás:</p>
+                    <a href="tel:08004507070" target="_blank" class="rodape__botao">0800 450 7070</a>
+                    <p>|</p>
+                    <a href="tel:+552422469462" target="_blank" class="rodape__botao">(24) 2246-9462</a>
+                    <p>SIGA NAS REDES:</p>
+                    <a href="https://wa.me//552422373321" target="_blank" class="rodape__botao">WhatsApp</a>
+                    <a href="https://www.instagram.com" target="_blank" class="rodape__botao">Instagram</a>
+                    <a href="https://pt-br.facebook.com" target="_blank" class="rodape__botao">Facebook</a>
+                </address>
+                <p>&copy; 2025 - Front-Gás - Todos os direitos reservados</p>
+            </section>
+        </footer>
+
+        <script src="../js/botao.js"></script>
+
+    </body>
+
 </html>

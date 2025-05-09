@@ -13,9 +13,41 @@
     overflow-wrap: break-word; /* força quebra de palavras longas */
 }
 
+.corpo__titulo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+/* ######################################################################################################################################################### */
+
+.conteudo {
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo__botaoTitulo {
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-size: clamp(1.5rem, 4vw, 2.5rem); /* Fonte responsiva */
+    letter-spacing: 1px;
+    text-shadow: 3px 3px 0 black;
+}
+
+.conteudo__botaoTitulo:hover {
+    color: #ffcc33;
+}
+
+.conteudo__imagem {
+    width: 50%;
+}
+
 /* ######################################################################################################################################################### */
 
 .botao { /*botão menu*/
+    position: initial;
     color: white;
     text-decoration: none;
     outline: none;
@@ -30,6 +62,7 @@
     background: linear-gradient(135deg, #f43900, #ff6f00);
     border: 1px solid rgb(180, 19, 19);
 }
+
 
 .custom__botao:hover{ /*altera a cor e o foco do botao do formulário*/
     background: green;
@@ -73,3 +106,5 @@
 .rodape__botao:hover {
     color: #ffcc33;
 }
+
+/* ######################################################################################################################################################### */
