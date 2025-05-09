@@ -1,21 +1,21 @@
 /*************************** Base ****************************************************/
 
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    background-image: url("../img/museu.jpg"); /*Definiu imagem de fundo*/
-    background-size: contain; /*Ajusta a imagem de fundo ao seu container*/
+    background-image: url("../img/museu.jpg");
+    background-size: contain;
     font-family: Arial, Helvetica, sans-serif;
     font-family: 16px;
-}
+} */
 
 /**************************************************************************************/
 /**************************** Layout **************************************************/
-.layout-cabecalho {
+/* .layout-cabecalho {
     padding: 3rem;
     text-align: center;
     justify-content: center;
@@ -26,14 +26,13 @@ body {
 .layout-cabecalho h1 {
     font-size: 2.5rem;
     letter-spacing: 1px;
-    text-shadow:  3px 3px 0 black; /* Dá o efeito 3d ao texto*/
+    text-shadow:  3px 3px 0 black;
 }
 
 .layout-menubar {
     width: 100vw;
     justify-content: center;
     text-align: center;
-    /* color: white; */
     background-color: #d63200;
     font-size: 1.5rem;
 } 
@@ -46,45 +45,48 @@ body {
     color: white;
     background: linear-gradient(135deg, #f43900, #ff6f00);
     font-size: 0.9rem;
-}
+} */
 
 
 /**************************************************************************************/
 /******************************* Components *******************************************/
-.botao { /*botão menu*/
+ /*botão menu*/
+/* .botao {
     color: white;
     
     text-decoration: none;
     outline: none;
-}
-
-.botao:hover{ /*botão menu*/
+} */
+ /*botão menu*/
+/* .botao:hover{
     color: #ffcc33;
-}
-
-.custom__botao{ /*altera a cor e tamanho do botao do formulário*/
+} */
+/*altera a cor e tamanho do botao do formulário*/
+/* .custom__botao{ 
     width: 10rem;
     background: linear-gradient(135deg, #f43900, #ff6f00);
     border: 1px solid rgb(180, 19, 19);
-}
+} */
 
-.custom__botao:hover{ /*altera a cor e o foco do botao do formulário*/
+ /*altera a cor e o foco do botao do formulário*/
+/* .custom__botao:hover{
     background: green;
     box-shadow: 0px 4px 10px #ff6f00;
-}
-
-.custom__shadow:focus{ /*altera a cor quando foco dos campos do formulário*/
+} */
+ /*altera a cor quando foco dos campos do formulário*/
+/* .custom__shadow:focus{
     box-shadow: 0px 4px 10px #ff6f00;
     border: #ff6f00;
-}
+} */
 
-.form-check-input:checked{ /*altera a cor quando marks são selecionados formulário*/
+ /*altera a cor quando marks são selecionados formulário*/
+/* .form-check-input:checked{
     background-color: #ff6f00;
     border-color: #ff6f00;
     box-shadow: 0px 4px 10px #ff6f00;
-}
+} */
 
-.rodape { /*Distância entre os itens*/
+/* .rodape {
     display: flex;
     gap: 15px; 
     flex-direction: column;
@@ -106,6 +108,6 @@ body {
 
 .rodape__botao:hover {
     color: #ffcc33;
-}
+} */
 
 /**************************************************************************************/

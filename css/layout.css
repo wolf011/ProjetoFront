@@ -12,6 +12,11 @@
     text-shadow: 3px 3px 0 black;    /* Dá o efeito 3d ao texto*/
 }
 
+.layout-cabecalho p {
+    padding: 1%;
+    font-size: 1.3rem;
+}
+
 .layout-menubar {
     width: 100vw;
     justify-content: center;
@@ -23,13 +28,13 @@
 }  
 
 .layout-corpo {
-    margin: auto;
+    margin: 0;
     padding: 3rem;
     height: 100vh;
     flex: 1;
     justify-content: center;
     align-items: center;
-    
+
     background: linear-gradient(rgba(255, 111, 0, 0.4), rgba(255, 111, 0, 0.4)), /* filtro alaranjado */
         url(../img/back_sobre.jpg); /* imagem de fundo */
 
@@ -44,7 +49,6 @@
     margin-top: auto;
     padding: 20px;
     width: 100%;
-    /* height: 100vh; */
     text-align: center;
     color: white;
     background: linear-gradient(135deg, #f43900, #ff6f00);
