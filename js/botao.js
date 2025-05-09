@@ -1,0 +1,1 @@
+const navegarPara = (pagina) => window.location.href = pagina;
