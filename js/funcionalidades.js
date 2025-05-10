@@ -18,3 +18,7 @@ function calcularTotal() {
     // Atualiza o campo de resultado
     document.getElementById("valorTotal").value = resultadoBr;
 }
+
+//==============================================================
+
+const navegarPara = (pagina) => window.location.href = pagina;

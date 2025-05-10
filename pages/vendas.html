@@ -55,21 +55,23 @@
     <!-- ************************** Ficha  ************************************************************ -->
     <!-- <main class="container"> -->
     <main class="layout-corpo">
-      <section class="corpo__descritivo" style="width: 55rem">
+      <section class="corpo__descritivo" style="overflow-x: auto;">
         <!-- Pensar em como resolver isso aqui -->
         <h4 class="titulo-formulario">Nossas Vendas:</h4>
-        <div>
-            <input
-            type="text"
-            id="input-pesquisa"
-            placeholder="pesquisa pelo nome"
-            style="border-radius: 6px; border-color: #ccc"
-            />
-            <button onclick="pesquisarNome()">Pesquisar</button>
-        </div>
-        <form method="post" class="form">
-          <h5>Lista de Clientes</h5>
-          <ul id="clientes-list"></ul>
+            <div>
+                <input
+                type="text"
+                id="input-pesquisa"
+                placeholder="pesquisa pelo nome"
+                style="border-radius: 6px; border-color: #ccc"
+                />
+                <button onclick="pesquisarNome()">Pesquisar</button>
+            </div>
+            <form method="post" class="form">
+          
+            <h5>Lista de Clientes</h5>
+            <ul id="clientes-list"></ul>
+            
         </form>
       </section>
     </main>
@@ -122,6 +124,6 @@
     <!-- ******************************************************************************************** -->
 
     <script src="../js/form-vendas.js"></script>
-    <!-- busca dados com método -->
+    
   </body>
 </html>
