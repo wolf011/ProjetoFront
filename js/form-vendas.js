@@ -1,5 +1,5 @@
-console.log("Script carregado com sucesso!");
 var resultados = [];
+
 document.addEventListener("DOMContentLoaded", async () => {
     try {
         const response = await fetch("https://681e362ac1c291fa66336b11.mockapi.io/api/gas/pedidos"); // Substitua pela sua API
@@ -17,16 +17,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         const listaClientes = document.getElementById("clientes-list");
 
         // Garantindo que o elemento existe antes de adicionar conteúdo
-        if (listaClientes) {
-            data.forEach((item) => {
-                listaClientes.innerHTML += `<li>
-                        <strong>Nome:</strong>${item.nome}<br>
-                        <strong>Endereço:</strong>${item.endereco}<br>
-                        <strong>Tel:</strong>${item.telefone}<br>
-                        <strong>Data:</strong>${formatarData(item.dataEntrega)}<br>
-                        </li>`;
-            });
-        } else {
+        if (!listaClientes) {
             console.error("Elemento #clientes-list não encontrado no HTML!");
         }
     } catch (error) {
@@ -49,8 +40,7 @@ function formatarData(dataEntrega) {
 
 function pesquisarNome(){
     const textoPesquisa = document.getElementById("input-pesquisa").value;
-    // console.log(document.getElementById("input-pesquisa").value);
-    // console.log(resultados);
+
     const filtro = resultados.filter(
         (item)=>{
             return item.nome === textoPesquisa;
@@ -61,12 +51,15 @@ function pesquisarNome(){
     listaClientes.innerHTML="";
     const renderizacao = textoPesquisa != "" ? filtro : resultados
     renderizacao.forEach((item) => {
-                listaClientes.innerHTML += `<li>
-                        <strong>Nome:</strong>${item.nome}<br>
-                        <strong>Endereço:</strong>${item.endereco}<br>
-                        <strong>Tel:</strong>${item.telefone}<br>
-                        <strong>Data:</strong>${formatarData(item.dataEntrega)}<br>
+                listaClientes.innerHTML += `<li style="border-bottom: 2px solid black;">
+                        <strong>Nome: </strong>${item.nome} &nbsp; | &nbsp;     
+                        <strong>Endereço: </strong>${item.endereco}<br>
+                        <strong>Data: </strong>${formatarData(item.dataEntrega)} &nbsp; | &nbsp;
+                        <strong>Produto: </strong>${(item.tipoProduto==="C")?
+                                                    "Cilindro P45":(item.tipoProduto==="G")?
+                                                    "Gás de Cozinha":"Água"} &nbsp; | &nbsp;
+                        <strong>Qtd: </strong>${item.quantidade} &nbsp; | &nbsp;
+                        <strong>R$ </strong>${item.valorTotal}<br>
                         </li>`;
             });
 }
-
