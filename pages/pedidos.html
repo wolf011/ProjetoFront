@@ -36,7 +36,7 @@
             <div class="row">
                 <div class="col-sm">
                     <div class="p-3">
-                        <a href="index.html" class="botao">Início</a>
+                        <a href="../index.html" class="botao">Início</a>
                     </div>
                 </div>
                 <div class="col-sm">
@@ -62,7 +62,7 @@
 
     <main class="layout-corpo">
 
-        <section class="corpo__descritivo" style="width: 55%;">
+        <section class="corpo__descritivo">
             <h4 class="titulo-formulario">Preencha os campos abaixo:</h4>
             <form method="post" class="form">
 
@@ -86,21 +86,21 @@
 
                 <!-- form telefone obrigatorio -->
                 <div class="row">
-                    <div class="my-3 col-md-3"> 
+                    <div class="my-3 col-md-6 col-lx-3"> 
                         <label for="telefone">Telefone:</label>
                         <input type="tel" name="telefone" id="telefone" placeholder="Digite o seu Telefone:"
                             class="form-control custom__shadow" required="true">
                     </div>
 
                     <!-- form escolhe dia e hora de entrega -->
-                    <div class="my-3 col-md-3"> 
+                    <div class="my-3 col-md-6 col-lx-3"> 
                         <label for="dataEntrega">Quando Entregar?</label>
                         <input type="datetime-local" name="dataEntrega" id="dataEntrega"
                             class="form-control custom__shadow">
                     </div>
 
                     <!-- form escolhe produto -->
-                    <div class="my-3 col-md-3"> 
+                    <div class="my-3 col-md-6 col-lx-3"> 
                         <label for="tipoProduto">Escolha seu Produto:</label>
                         <select name="tipoProduto" id="tipoProduto"
                             class="custom-select custom-select-lg custom__shadow mb-3">
@@ -111,7 +111,7 @@
                     </div>
 
                     <!-- form escolhe quantidade -->
-                    <div class="my-3 col-md-3"> 
+                    <div class="my-3 col-md-6 col-lx-3"> 
                         <label for="quantidade">Quantidade:</label>
                         <input type="number" name="quantidade" id="quantidade" placeholder="Escolha a Quantidade"
                             class="form-control custom__shadow" min="1">
@@ -129,7 +129,7 @@
                         <!-- type text - valor recebido do js formatado para tela -->
                     </div>
 
-                    <fieldset class="my-3 col-md">
+                    <fieldset class="my-3 col-md"> <!--oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo-->
                         <legend>Forma de Pagamento:</legend> <!-- checkbox radio: somente uma dentre escolha -->
 
                         <div class="form-check form-check-inline ">
