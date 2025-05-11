@@ -1,9 +1,9 @@
-const navegarPara = (pagina) => window.location.href = pagina;
+const navegarPara = (pagina) => window.location.href = pagina; // Botão para migrar de página
 
-//==============================================================
+//============================= Função que retorna o total do pedido =============================
 
-document.getElementById("tipoProduto").addEventListener("change", calcularTotal);
-document.getElementById("quantidade").addEventListener("input", calcularTotal);
+document.getElementById("tipoProduto").addEventListener("change", calcularTotal); // Escuta mudanças no tipo de produto
+document.getElementById("quantidade").addEventListener("input", calcularTotal); // Escuta alterações na quantidade
 
 function calcularTotal() {
     let quantidade = parseInt(document.getElementById("quantidade").value) || 0;

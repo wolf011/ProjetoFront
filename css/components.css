@@ -92,6 +92,12 @@
 
 /* ######################################################################################################################################################### */
 
+#input-pesquisa {
+    width: 100% ; 
+    border-radius: 6px; 
+    border-color: #ccc;
+}
+
 .botao { /*botão menu*/
     position: initial;
     color: white;
@@ -99,11 +105,11 @@
     outline: none;
 }
 
-.botao:hover{ /*botão menu*/
+.botao:hover { /*botão menu*/
     color: #ffcc33;
 }
 
-.custom__botao{ /*altera a cor e tamanho do botao do formulário*/
+.custom__botao { /*altera a cor e tamanho do botao do formulário*/
     margin: 1%;
     font-size: clamp(0.8rem, 2.5vw, 1.2rem); 
     width: clamp(6rem, 20vw, 10rem);
@@ -112,27 +118,22 @@
 }
 
 
-.custom__botao:hover{ /*altera a cor e o foco do botao do formulário*/
+.custom__botao:hover { /*altera a cor e o foco do botao do formulário*/
     background: green;
     box-shadow: 0px 4px 10px #ff6f00;
 }
 
-.custom__shadow:focus{ /*altera a cor quando foco dos campos do formulário*/
+.custom__shadow:focus { /*altera a cor quando foco dos campos do formulário*/
     box-shadow: 0px 4px 10px #ff6f00;
     border: #ff6f00;
 }
 
-.form-check-input:checked{ /*altera a cor quando marks são selecionados formulário*/
+.form-check-input:checked { /*altera a cor quando marks são selecionados formulário*/
     background-color: #ff6f00;
     border-color: #ff6f00;
     box-shadow: 0px 4px 10px #ff6f00;
 }
 
-#input-pesquisa {
-    width: 100% ; 
-    border-radius: 6px; 
-    border-color: #ccc;
-}
 
 /* ######################################################################################################################################################### */
 
@@ -161,10 +162,10 @@
     color: #ffcc33;
 }
 
-/* ######################################################################################################################################################### */
-
 @media (max-width: 800px) {
     .rodape__duplo {
         flex-direction: column;
     }
 }
+
+/* ######################################################################################################################################################### */

@@ -1,5 +1,6 @@
-var resultados = [];
+var resultados = []; // Armazena os dados recebidos da API.
 
+// GET 
 document.addEventListener("DOMContentLoaded", async () => {
     try {
         const response = await fetch("https://681e362ac1c291fa66336b11.mockapi.io/api/gas/pedidos"); // Substitua pela sua API
