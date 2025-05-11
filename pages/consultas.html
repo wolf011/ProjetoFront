@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pedidos</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../css/bootstrap-grid.min.css" />
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/layout.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+</head>
+
+<body>
+  <!-- **************************** Cabeçalho *************************************************** -->
+
+  <header class="layout-cabecalho">
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Super Vendas Front-Gás</h1>
+        <p class="lead">Todos os nossos clientes em um só lugar!!!</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- ************************** Menu ************************************************************ -->
+
+  <nav class="layout-menubar">
+    <section class="container-fluid">
+      <div class="row">
+        <div class="col-sm">
+          <div class="p-3">
+            <a href="index.html" class="botao">Início</a>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="p-3">
+            <a href="sobre.html" class="botao">Sobre</a>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="p-3">
+            <a href="produtos.html" class="botao">Produtos</a>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="p-3">
+            <a href="pedidos.html" class="botao">Faça seu Pedido</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </nav>
+
+  <!-- ************************** Ficha  ************************************************************ -->
+  <!-- <main class="container"> -->
+  <main class="layout-corpo">
+    <section class="corpo__descritivo" style="overflow-x: auto;">
+      <!-- Pensar em como resolver isso aqui -->
+      <h4 class="titulo-formulario">Nossas Vendas:</h4>
+      <div>
+        <input type="text" id="input-pesquisa" placeholder="Nome cliente"
+          style="width: 100% ; border-radius: 6px; border-color: #ccc" />
+        <button onclick="pesquisarNome()" class="btn btn-primary custom__botao" style="margin: 1%; float: right;">Pesquisar</button>
+      </div>
+      <form method="post" class="form">
+        <br>
+        <h5>Lista de Clientes</h5>
+        <ul id="clientes-list"></ul>
+
+      </form>
+    </section>
+  </main>
+
+  <!-- ******************************************************************************************** -->
+  <!-- Rodapé -->
+
+  <footer class="layout-rodape">
+    <section class="rodape">
+      <a href="index.html" target="_blank" class="rodape__botao">Super Front-Gas</a>
+      <!-- target com blank usado para abrir links em novas abas-->
+      <a href="mailto:turispetro@petropolis.rj.gov.br" class="rodape__botao">Email: contato@superflex</a>
+      <address class="rodape__duplo">
+        <p>DISQUE Front-Gás:</p>
+        <a href="tel:08004507070" target="_blank" class="rodape__botao">0800 450 7070</a>
+        <p>|</p>
+        <a href="tel:+552422469462" target="_blank" class="rodape__botao">(24) 2246-9462</a>
+        <p>SIGA NAS REDES:</p>
+        <a href="https://wa.me//552422373321" target="_blank" class="rodape__botao">WhatsApp</a>
+        <a href="https://www.instagram.com" target="_blank" class="rodape__botao">Instagram</a>
+        <a href="https://pt-br.facebook.com" target="_blank" class="rodape__botao">Facebook</a>
+      </address>
+      <p>&copy; 2025 - Front-Gás - Todos os direitos reservados</p>
+    </section>
+  </footer>
+
+  <!-- ******************************************************************************************** -->
+
+  <script src="../js/form-vendas.js"></script>
+
+</body>
+
+</html>

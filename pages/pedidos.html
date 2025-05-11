@@ -51,7 +51,7 @@
                 </div>
                 <div class="col-sm">
                     <div class="p-3">
-                        <a href="vendas.html" class="botao">Minhas Compras</a>
+                        <a href="consultas.html" class="botao">Minhas Compras</a>
                     </div>
                 </div>
             </div>
@@ -62,11 +62,12 @@
 
     <main class="layout-corpo">
 
-        <section class="corpo__descritivo" style="width: 55rem;"> <!-- Pensar em como resolver isso aqui -->
+        <section class="corpo__descritivo" style="width: 55%;">
             <h4 class="titulo-formulario">Preencha os campos abaixo:</h4>
             <form method="post" class="form">
 
-                <div class="row"> <!-- form nome obrigatorio -->
+                <!-- form nome obrigatorio -->
+                <div class="row"> 
                     <div class="my-3 col-md-12">
                         <label for="nome">Nome:</label>
                         <input type="text" name="nome" id="nome" placeholder="Digite o nome:"
@@ -74,7 +75,8 @@
                     </div>
                 </div>
 
-                <div class="row"> <!-- form endereco obrigatorio -->
+                <!-- form endereco obrigatorio -->
+                <div class="row"> 
                     <div class="my-3 col-md-12">
                         <label for="endereco">Endereço de Entrega:</label>
                         <input type="text" name="endereco" id="nome" placeholder="Digite o Endereço:"
@@ -82,30 +84,34 @@
                     </div>
                 </div>
 
+                <!-- form telefone obrigatorio -->
                 <div class="row">
-                    <div class="my-3 col-md-3"> <!-- form telefone obrigatorio -->
+                    <div class="my-3 col-md-3"> 
                         <label for="telefone">Telefone:</label>
                         <input type="tel" name="telefone" id="telefone" placeholder="Digite o seu Telefone:"
                             class="form-control custom__shadow" required="true">
                     </div>
 
-                    <div class="my-3 col-md-3"> <!-- form escolhe dia e hora de entrega -->
+                    <!-- form escolhe dia e hora de entrega -->
+                    <div class="my-3 col-md-3"> 
                         <label for="dataEntrega">Quando Entregar?</label>
                         <input type="datetime-local" name="dataEntrega" id="dataEntrega"
                             class="form-control custom__shadow">
                     </div>
 
-                    <div class="my-3 col-md-3"> <!-- form escolhe produto -->
+                    <!-- form escolhe produto -->
+                    <div class="my-3 col-md-3"> 
                         <label for="tipoProduto">Escolha seu Produto:</label>
                         <select name="tipoProduto" id="tipoProduto"
                             class="custom-select custom-select-lg custom__shadow mb-3">
-                            <option value="C">Cilindro P45 (45Kg)</option>
+                            <option value="C">Cilindro P45 (45kg)</option>
                             <option value="G">Gás de Cozinha (13kg)</option>
-                            <option value="A">Galão de Água (20l)</option>
+                            <option value="A">Galão de Água (20L)</option>
                         </select>
                     </div>
 
-                    <div class="my-3 col-md-3"> <!-- form escolhe quantidade -->
+                    <!-- form escolhe quantidade -->
+                    <div class="my-3 col-md-3"> 
                         <label for="quantidade">Quantidade:</label>
                         <input type="number" name="quantidade" id="quantidade" placeholder="Escolha a Quantidade"
                             class="form-control custom__shadow" min="1">
@@ -115,7 +121,8 @@
 
                 <div class="row">
 
-                    <div class="my-3 col-md-2"> <!-- Form mostra o valor total a pagar -->
+                    <!-- Form mostra o valor total a pagar -->
+                    <div class="my-3 col-md-2"> 
                         <label for="valorTotal">Total a Pagar (R$):</label>
                         <input type="text" name="valorTotal" id="valorTotal" class="form-control custom__shadow"
                             placeholder="R$ 0,00" readonly>
