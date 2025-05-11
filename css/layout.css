@@ -15,12 +15,14 @@
 
 .layout-cabecalho h1 {
     font-size: 2.5rem;
+    font-weight: bold;
     letter-spacing: 1px;
     text-shadow: 3px 3px 0 black;    /* Dá o efeito 3d ao texto*/
 }
 
 .layout-cabecalho--diferente h1 {
     font-size: 2.5rem;
+    font-weight: bold;
     letter-spacing: 1px;
     text-shadow: 3px 3px 0 black;
 }

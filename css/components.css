@@ -46,6 +46,20 @@
 
 /* ######################################################################################################################################################### */
 
+/* Define tamanho fixo e responsivo para as imagens do carrossel */
+.carousel-item img {
+    padding: 10%;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
+    margin: auto;
+    display: block;
+}
+
+/* ######################################################################################################################################################### */
+
 .botao { /*botão menu*/
     position: initial;
     color: white;
@@ -58,7 +72,9 @@
 }
 
 .custom__botao{ /*altera a cor e tamanho do botao do formulário*/
-    width: 10rem;
+    font-size: clamp(0.8rem, 2.5vw, 1.2rem); 
+    width: clamp(6rem, 20vw, 10rem);
+    /* width: 10rem; */
     background: linear-gradient(135deg, #f43900, #ff6f00);
     border: 1px solid rgb(180, 19, 19);
 }

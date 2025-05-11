@@ -1,3 +1,7 @@
+const navegarPara = (pagina) => window.location.href = pagina;
+
+//==============================================================
+
 document.getElementById("tipoProduto").addEventListener("change", calcularTotal);
 document.getElementById("quantidade").addEventListener("input", calcularTotal);
 
@@ -19,6 +23,3 @@ function calcularTotal() {
     document.getElementById("valorTotal").value = resultadoBr;
 }
 
-//==============================================================
-
-const navegarPara = (pagina) => window.location.href = pagina;
