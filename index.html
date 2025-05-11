@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-Br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="../img/logo.png">
+    <link rel="icon" type="image/png" href="./img/logo.png">
 
-    <link rel="stylesheet" href="../css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="../css/base.css">
-    <link rel="stylesheet" href="../css/layout.css">
-    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/components.css">
 
     <title>Super Front-Gás</title>
 
@@ -19,9 +19,7 @@
 
         <!-- ############################################################### Cabeçalho ###################################################################### -->
 
-
-
-        <header class="layout-cabecalho--diferente">
+        <header class="layout-cabecalho--semFundo">
             <div class="jumbotron jumbotron-fluid">
                 <div class="container">
                     <h1 class="display-4">Super Front-Gás</h1>
@@ -35,27 +33,18 @@
 
             <section class="conteudo">
                 <div class="row">
-                    <section class="col-12 col-md-6">
-                        <article class="conteudo__bloco">
-                            <button onclick="navegarPara('sobre.html')" class="btn conteudo__botaoTitulo">Quem somos?</button>
-                        </article>
-            
-                        <article class="conteudo_bloco">
-                            <button onclick="navegarPara('produtos.html')" class="btn conteudo__botaoTitulo">Conheça nossos produtos</button>
-                        </article>
-            
-                        <article class="conteudo_bloco">
-                            <button onclick="navegarPara('pedidos.html')" class="btn conteudo__botaoTitulo">Compre conosco</button>
-                        </article>
-            
-                        <article class="conteudo_bloco">
-                            <button onclick="navegarPara('consultas.html')" class="btn conteudo__botaoTitulo">Histórico de compras</button>
-                        </article>
+                    <article class="col-12 col-md-6">
+                        <ul>
+                            <li><button onclick="navegarPara('./pages/sobre.html')" class="btn conteudo__botaoTitulo">Quem somos?</button></li>
+                            <li><button onclick="navegarPara('./pages/produtos.html')" class="btn conteudo__botaoTitulo">Conheça nossos produtos</button></li>
+                            <li><button onclick="navegarPara('./pages/pedidos.html')" class="btn conteudo__botaoTitulo">Compre conosco</button></li>
+                            <li><button onclick="navegarPara('./pages/consultas.html')" class="btn conteudo__botaoTitulo">Histórico de compras</button></li>
+                        </ul>
 
-                    </section>
-                    <section class="col-6 col-md-6">
-                        <img src="../img/logo.png" alt="logo" class="conteudo__imagem img-fluid">
-                    </section>
+                    </article>
+                    <figure class="col-12 col-md-6">
+                        <img src="./img/logo.png" alt="logo" class="conteudo__imagem img-fluid">
+                    </figure>
                 </div>
 
             </section>
@@ -83,7 +72,7 @@
             </section>
         </footer>
 
-        <script src="../js/funcionalidades.js"></script>
+        <script src="./js/funcionalidades.js"></script>
 
     </body>
 

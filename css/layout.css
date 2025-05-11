@@ -1,13 +1,13 @@
 .layout-cabecalho {
-    padding: 3rem;
+    padding: 1rem;
     text-align: center;
     justify-content: center;
     color: white;
     background: linear-gradient(135deg, #f43900, #ff6f00);
 }
 
-.layout-cabecalho--diferente{
-    padding: 3rem;
+.layout-cabecalho--semFundo{
+    padding: 1rem;
     text-align: center;
     justify-content: center;
     color: white;
@@ -20,7 +20,7 @@
     text-shadow: 3px 3px 0 black;    /* Dá o efeito 3d ao texto*/
 }
 
-.layout-cabecalho--diferente h1 {
+.layout-cabecalho--semFundo h1 {
     font-size: 2.5rem;
     font-weight: bold;
     letter-spacing: 1px;
@@ -28,7 +28,7 @@
 }
 
 .layout-cabecalho p {
-    padding: 1%;
+    padding: 1rem;
     font-size: 1.3rem;
 }
 
@@ -64,8 +64,7 @@
     margin: 0;
     padding: 3rem;
    
-    height: 100rem;
-    width: 100rem;
+    height: 100hv;
 
     flex: 1;
     justify-content: center;
